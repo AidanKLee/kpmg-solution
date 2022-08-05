@@ -1,0 +1,20 @@
+@import './fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0 none transparent;
+  font-family: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: 'Poppins', 'Roboto' system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+b {
+  font-weight: 500 !important;
+}

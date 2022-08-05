@@ -1,0 +1,39 @@
+#map {
+    height: 100vh;
+    transition: .2s;
+}
+
+#map.menu-open {
+    height: 50vh;
+}
+
+#map.menu-open.menu-fullscreen {
+    height: 0;
+}
+
+#app .leaflet-container {
+    height: 100%;
+}
+
+.leaflet-popup-content {
+    margin: 1.5rem;
+}
+
+.leaflet-popup-content .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.popup p {
+    margin: 0 0 .5rem 0;
+}
+
+table .selected {
+    background-color: var(--bs-primary);
+    color: white !important;
+}
+
+table .selected * {
+    color: white !important;
+}

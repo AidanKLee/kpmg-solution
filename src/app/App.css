@@ -1,0 +1,105 @@
+#app #controls {
+    position: absolute; z-index: 1000;
+    top: 0; left: 0;
+    margin: 1rem 0 0 1rem;
+}
+
+#app #controls > .btn {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin-bottom: .5rem;
+}
+
+#menu {
+    height: 0;
+    overflow-y: scroll;
+    transition: .2s;
+}
+
+#menu.open {
+    height: 50vh;
+}
+
+#menu.open.fullscreen {
+    height: 100vh;
+}
+
+#menu-header {
+    top: 0;
+    background-color: white;
+    position: sticky;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+#menu-header > .left > button {
+    margin-right: .5rem
+}
+
+#menu-header > .right > button {
+    margin-left: .5rem
+}
+
+#menu thead {
+    background-color: white;
+    position: sticky;
+    top: 47px;
+    z-index: 4;
+    box-shadow: 2px 0 2px var(--bs-gray-500);
+}
+
+#menu tbody {
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 640px) {
+    td:last-of-type, th:last-of-type {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    td:nth-of-type(3), th:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    td:nth-of-type(2), th:nth-of-type(2) {
+        display: none;
+    }
+}
+
+.dropdown-item {
+    font-size: .8rem;
+    display: flex !important;
+    align-items: center;
+}
+
+.dropdown-item > input {
+    margin-right: .5rem;
+    width: fit-content;
+}
+
+.dropdown-item:active > input[type=number] {
+    color: white;
+}
+
+.dropdown-item > input[type=number]:focus {
+    outline: 0 none transparent;
+}
+
+.dropdown-item > span {
+    margin-right: .5rem;
+}
+
+.modal h6 {
+    margin-bottom: 0;
+}
+
+.modal p:last-of-type {
+    margin-bottom: 0;
+}
